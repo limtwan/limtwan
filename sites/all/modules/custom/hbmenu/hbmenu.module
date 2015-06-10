@@ -1,0 +1,18 @@
+<?php
+/**
+ * reorder implement list.
+ */
+function hbmenu_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'menu_alter') {
+    $group = $implementations['hbmenu'];
+    unset($implementations['hbmenu']);
+    $implementations['hbmenu'] = $group;
+  }
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function hbmenu_menu_alter(&$items) {
+  $items['favorite']['access callback'] = 'user_is_logged_in';
+}

@@ -1,0 +1,190 @@
+////////////////////////////////////////////// 
+/*fonts*/
+/*h2*/
+.page_header {
+	color: @brand-primary;
+	margin-top: 10px;
+}
+/*h3*/
+.title {
+ 	margin-top: 10px;
+ 	font-weight: 500;
+}
+/*h4*/
+.subtitle {
+	color: @gray-light;
+	margin-top: 10px;
+	font-weight: 100;
+	line-height: 26px;
+}
+/*h5*/
+.small_title {
+	font-weight: 700;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*h5*/
+.small_subtitle {
+	overflow: hidden;
+}
+
+/////////////////////////////////////////////
+/*general*/
+.border-bottom {
+	border-bottom: 1px solid @gray-lighter;
+	padding-bottom: 5px;
+}
+.border-left {
+	border-left: 1px solid @gray-lighter;
+}
+.table-no-border > tbody > tr > td {
+	border-top: none;
+}
+.bg_gray {
+	background-color: @gray-lighter;
+    border-radius: @border-radius-small;
+}
+.stButton .stMainServices {
+	height: auto !important;
+}
+.sharethis-buttons {
+	margin-bottom: 10px;
+}
+
+////////////////////////////////////////////
+/*gallery page styling*/
+.gallery-results {
+	text-align: center;
+}
+////////////////////////////////////////////
+/*exposed filter styling*/
+.exposed-form ul {
+	list-style-type: none;
+	padding-left: 5px;
+}
+.exposed-form ul.bef-tree ul.bef-tree-depth-1 {
+	list-style-type: none;
+	padding-left: 25px;
+}
+/*label formgroup*/
+.form-group {
+	cursor: default;
+}
+.exposed-form label {
+	.h4();
+}
+.exposed-form label.option {
+	.h5();
+	vertical-align: 2px;
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+}
+/*expander for nested list*/
+.expander {
+	vertical-align: 2px;
+	cursor: pointer;
+}
+
+//////////////////////////////////////////////////////////
+/*Articles **Page** styling */
+.item-articles img {
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+///////////////////////////////////////////////////////////
+/*Article **Node** styling */
+.submitted {
+	margin-bottom: 0px;
+}
+.submitted .user-information {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+	font-size: 12px;
+}
+.user-picture,.field-name-field-pro-image {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.content-article img {
+	margin: 0px 10px 10px 0px;
+}
+
+
+///////////////////////////////////////////////////////
+/*Portfolio **Node** styling*/
+
+/*carousel*/
+.carousel.fullscreen .carousel-inner {
+	text-align: center;
+}
+.carousel.fullscreen .carousel-inner img {
+	display: inline-block;
+}
+.carousel.fullscreen .carousel-control.left, .carousel.fullscreen .carousel-control.right {
+	background-image: none;
+}
+.pro_info {
+	display: inline-block;
+	vertical-align: top;
+}
+.sidebar_portfolio {
+	max-height: 570px;
+	overflow-y: scroll;
+	border: 1px solid @gray-darker;
+}
+
+/*Overlay effect*/
+.pdf-thumb-box {
+	position: relative; 
+}
+.pdf-thumb-box-overlay, .flag_button {   
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+.pdf-thumb-box:hover .pdf-thumb-box-overlay {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    visibility: visible;
+    transition-delay: 0s;
+    opacity: 0.5;
+    background-color: @gray-lighter;
+}
+.flag_button {
+	position: absolute;
+	width: 150px;
+    margin-left: -75px;
+	bottom: 10px;
+	left: 50%;
+	padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    background: @brand-primary;
+	text-align: center;
+    border-radius: @border-radius-base;
+}
+.pdf-thumb-box:hover .flag_button {
+    visibility: visible;
+    transition-delay: 0s;
+    opacity: 1;
+}
+.flag_button a span, .flag_button span a {
+	color: white;
+}
+
+/*h4*/
+.comment .content {
+	margin-bottom: 0px;
+}
+
+.comment {
+	border: 1px solid @gray;
+	border-radius: @border-radius-base;
+	background-color: white;
+	padding: @padding-small-vertical @padding-small-horizontal;
+	margin-bottom: 5px;
+}

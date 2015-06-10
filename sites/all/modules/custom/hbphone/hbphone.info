@@ -1,0 +1,9 @@
+name = hbphone
+description = "Custom homubook module for phone"
+package = HOMUBOOK DEVELOPMENT
+dependencies[] = field
+core = 7.x
+version = 1.0
+files[] = hbphone.module
+files[] = hbphone.install
+configure = admin/config/content/hbphone/settings
